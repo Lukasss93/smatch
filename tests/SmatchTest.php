@@ -87,7 +87,7 @@ class SmatchTest extends TestCase
             })
             ->get();
 
-        self::assertEquals('invali', $result);
+        self::assertEquals('invalid', $result);
     }
 
     public function testUnhandledFallback(): void
