@@ -1,0 +1,45 @@
+{
+    "name": "lukasss93/smatch",
+    "description": "Match for PHP 7.3 and PHP 7.4",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Luca Patera",
+            "email": "lucapatera@outlook.it",
+            "homepage": "https://www.lucapatera.it/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^7.4"
+    },
+    "require-dev": {
+        "ext-mbstring": "*",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lukasss93\\Smatch\\": "src/"
+        },
+        "files": [
+            "src/Support/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lukasss93\\Smatch\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": [
+            "@php vendor/phpunit/phpunit/phpunit --colors=always"
+        ],
+        "test-coverage": [
+            "@php vendor/phpunit/phpunit/phpunit --colors=always --bootstrap vendor/autoload.php --configuration phpunit.xml.dist --coverage-clover coverage.xml"
+        ]
+    }
+}
