@@ -82,7 +82,7 @@ class Smatch
 
         if ($this->default === null) {
             $type = gettype($this->source);
-            throw new UnhandledSmatchException("Unhandled match value of type $type");
+            throw new UnhandledSmatchException("Unhandled smatch value of type $type");
         }
 
         if ($this->default instanceof Closure) {
