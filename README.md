@@ -5,7 +5,7 @@
 # Smatch
 
 [![Version](https://poser.pugx.org/lukasss93/smatch/v/stable)](https://packagist.org/packages/lukasss93/smatch)
-[![Downloads](https://poser.pugx.org/lukasss93/smatch/downloads)](https://packagist.org/packages/lukasss93/smatch)
+![Packagist Downloads](https://img.shields.io/packagist/dt/lukasss93/smatch)
 ![PHP](https://img.shields.io/badge/PHP-7.3%20|%207.4-blue)
 ![GitHub](https://img.shields.io/github/license/lukasss93/smatch)
 [![Build](https://img.shields.io/github/workflow/status/Lukasss93/smatch/run-tests)](https://github.com/Lukasss93/smatch/actions/workflows/tests.yml)
