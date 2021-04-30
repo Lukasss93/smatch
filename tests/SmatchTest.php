@@ -113,7 +113,7 @@ class SmatchTest extends TestCase
                 ->get();
         } catch (UnhandledSmatchException $e) {
             $handled = true;
-            self::assertEquals('Unhandled match value of type string', $e->getMessage());
+            self::assertEquals('Unhandled smatch value of type string', $e->getMessage());
         }
 
         self::assertTrue($handled);
